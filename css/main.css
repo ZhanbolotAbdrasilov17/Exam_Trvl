@@ -1,0 +1,122 @@
+main {
+    background-color: black;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px 100px ;
+    margin-top: -2px;
+}
+.title {
+    padding-right: 50px;
+}
+.main-title {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding-top: 116px;
+}
+.desk {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    padding-top: 37px;
+    width: 348px;
+}
+.pictures {
+    display: flex; 
+}
+
+.image-top {
+    background-image: url(../image/Rectangle\ 2.png);
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 186px;
+    margin-top: 116px;
+    background-size: 100% 100%;
+}
+.image-bottom {
+    background-image: url(../image/Rectangle\ 1\ \(1\).png);
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 249px;
+    margin-top: 22px;
+    background-size: 100% 100%;
+}
+.right-block {
+    padding-left: 25px;
+}
+.image-right {
+    background-image: url(../image/Rectangle\ 3.png);
+    width: 326px;
+    height: 457px;
+    margin-top: 116px;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:1100px) {
+    main {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .main-title {
+        padding-top: 0;
+    }
+    .image-top {
+        margin: 0;
+    }
+    .image-right {
+        margin: 0;
+    }
+    .left-block {
+        margin-left: auto;
+    }
+    .right-block {
+        margin-right: auto;
+    }
+    .title {
+        padding: 0;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    .pictures {
+        padding-bottom: 110px ;
+        padding-top: 59px;
+    }
+    .desk {
+        width: 100%;
+    }
+
+
+}
+@media screen and (max-width: 750px) {
+    .pictures {
+        flex-direction: column;
+        
+    }
+    .left-block, .right-block {
+        margin: 0 auto;
+    }
+    .left-block * {
+        width: 292px;
+    }
+    .left-block img{
+        width: 100%;
+    
+    }
+    .right-block * {
+        width: 292px;
+        border-radius: 20px;
+        padding: 0;
+    }
+    .right-block {
+        padding: 0;
+        margin-top: 22px;
+    }
+    .title  {
+        width: 292px;
+        margin-bottom: 47px;
+      
+    }
+    .head {
+        font-size: 28px;
+    }
+}
